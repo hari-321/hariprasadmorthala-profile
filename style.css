@@ -1,0 +1,167 @@
+body{
+    display: grid;
+    box-sizing: border-box;
+    align-content: center;
+    margin: 2rem 0;
+    font-family: Courier, monospace;
+    font-weight: 600;
+    background-color: rgb(167, 211, 224);
+}
+#container{
+    
+    border-top-right-radius: 2rem;
+    margin: 0 2rem;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(125, 3, 3, 0.767);
+    background-image: linear-gradient(180deg, rgba(243, 169, 120, 0.57), white, rgba(41, 228, 87, 0.385));
+    box-shadow: 0.3em 0.3em 0.3em 0em rgba(0 0 0 / 0.1);
+}
+#bottom-section, #projects {
+    margin: 3rem 0;
+}
+#container #topsection{
+    margin: 1rem;
+    text-align: center;
+}
+span:hover
+{
+    border: 1px solid rgb(7, 7, 247);
+    padding: .25em;
+    border-radius: .5rem;
+    box-shadow: 0 0 .2em .1em  rgba(0 0 0 / 0.2);
+}
+h1{
+    line-height: 1.5;
+    display: inline;
+}
+#container > h1:hover{
+    color: rgb(0, 0, 255);
+    transition: transform 200ms ease-in-out;
+    transform: scale(1.5);
+}
+h5{
+    padding: 0%;
+    margin: 0;
+}
+h4{
+    margin: 0.5em;
+    padding: 0em;
+    opacity: 0.5;
+}
+#top-section {
+    padding: 2em ;
+    grid-template-columns: 150px minmax(250px, 350px);
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(./IMAGES/art-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -1%;
+    box-sizing: border-box;
+}
+#top-section p
+{
+    color:rgb(253, 253, 253);
+    align-content: center;
+}
+#top-section img
+{
+    position: relative;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 150px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+#top-section img:hover{
+    transition: transform 350ms ease;
+    transform: scale(1.05);
+}
+#bottom-section
+{
+    display: grid;
+    grid-template-columns: 250px minmax(150px, 150px);
+    align-content: center;
+    text-align: center;
+    height: 25%;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(90deg, white, rgb(98, 210, 222));
+}
+#bottom-section img
+{
+    margin: auto;
+    width: 7.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+#bottom-section h5
+{
+    /* padding: 2em; */
+    color: rgb(43, 6, 248);
+    margin: 2rem 2rem;
+}
+#bottom-section>h5:hover{
+    transition: transform 450ms ease;
+    transform: scale(1.05);
+    color: brown;
+}
+#projects
+{
+    background-image: linear-gradient(90deg, rgb(98, 210, 222), rgba(255, 255, 255, 0.92)) ;
+    text-align: center;
+}
+#projects h5{
+    padding: 2.3em;
+}
+#footer{
+    text-align: center;
+    justify-content: center;
+}
+#footer p
+{
+    color: rgb(46, 36, 67);
+}
+#footer a{
+    align-content: center;
+    margin: .19rem;
+}
+#footer a :hover,
+#footer a :focus
+{
+    transition: transform 350ms ease-in-out;
+    transform: scale(1.3);
+}
+.copy{
+    color: red;
+}
+
+
+@media (min-width: 35rem)
+{
+#top-section, #bottom-section, #projects, #footer
+{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+}
+
+@media (max-width: 60rem)
+{
+    #top-section, #bottom-section, #projects
+{
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+}
+}
